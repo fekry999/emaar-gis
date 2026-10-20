@@ -1,0 +1,12 @@
+/* Photo pins with the city name inside */
+.emaar-pin {
+  width: 76px; height: 76px; border-radius: 50%; border: 3px solid var(--gold);
+  background-color: var(--purple); background-size: cover; background-position: center;
+  box-shadow: 0 0 0 3px var(--purple-deep), 0 4px 12px rgba(0, 0, 0, .5);
+  display: flex; align-items: center; justify-content: center; padding: 6px; box-sizing: border-box;
+  cursor: pointer;
+}
+.emaar-pin span {
+  font-family: Georgia, serif; font-size: 12px; line-height: 1.15; font-weight: 700;
+  color: var(--cream); text-align: center; text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
+}

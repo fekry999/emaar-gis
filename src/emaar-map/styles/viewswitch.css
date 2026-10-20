@@ -1,0 +1,13 @@
+/* 2D / 3D switch (top-right) */
+.viewswitch {
+  position: absolute; z-index: 1000; top: 10px; right: 10px; display: flex;
+  background: var(--purple); border: 1px solid var(--gold); border-radius: 10px;
+  overflow: hidden; box-shadow: 0 4px 14px rgba(0, 0, 0, .4);
+}
+.viewswitch button {
+  padding: 8px 16px; border: none; background: transparent; color: var(--cream);
+  font-family: Georgia, serif; font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.viewswitch button + button { border-left: 1px solid var(--purple-soft); }
+.viewswitch button:hover { background: var(--purple-soft); }
+.viewswitch button.active { background: var(--gold); color: var(--purple-deep); }

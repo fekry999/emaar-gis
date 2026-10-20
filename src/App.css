@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+.arabic-label {
+  direction: rtl;
+  unicode-bidi: plaintext;
+  text-align: right;
+}

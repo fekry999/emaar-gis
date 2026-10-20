@@ -1,0 +1,10 @@
+/* Layers panel (top-right) */
+.layers {
+  position: absolute; z-index: 1000; top: 10px; right: 10px; min-width: 150px;
+  background: var(--purple); border: 1px solid var(--gold); border-radius: 12px;
+  padding: 10px 14px; box-shadow: 0 4px 14px rgba(0, 0, 0, .4);
+}
+.layers-title { font-family: Georgia, serif; font-size: 15px; color: var(--gold); margin-bottom: 6px; }
+.layers-row { display: flex; align-items: center; gap: 8px; padding: 4px 0;
+              font-size: 13px; color: var(--cream); cursor: pointer; }
+.layers-row input { accent-color: var(--gold); width: 15px; height: 15px; cursor: pointer; }

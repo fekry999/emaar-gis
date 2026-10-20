@@ -1,0 +1,24 @@
+/* Horizontal bar: one card per project + reset */
+.bar {
+  position: absolute; z-index: 1000; left: 12px; right: 12px; bottom: 30px;
+  display: flex; gap: 10px; overflow-x: auto; padding: 4px 2px 6px;
+}
+.card {
+  flex: 1 0 140px; display: flex; flex-direction: column; gap: 3px; text-align: left;
+  padding: 11px 13px; background: var(--purple); color: var(--cream);
+  border: 1px solid var(--purple-soft); border-radius: 12px; cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .4);
+}
+.card:hover { border-color: var(--gold); }
+.card.active { border-color: var(--gold); background: var(--purple-soft); }
+.card-name { font-family: Georgia, serif; font-size: 15px; color: var(--cream); }
+.card-area { font-size: 12px; color: #b9aedb; }
+.card.active .card-name { color: var(--gold); }
+.card.all { flex: 0 0 96px; background: var(--purple-deep); border-color: var(--gold); }
+.card.all .card-name { color: var(--gold); }
+.card.all:hover { background: var(--gold); }
+.card.all:hover .card-name, .card.all:hover .card-area { color: var(--purple-deep); }
+
+@media (max-width: 700px) {
+  .card { flex: 0 0 130px; }
+}

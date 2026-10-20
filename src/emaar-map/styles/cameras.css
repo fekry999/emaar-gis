@@ -1,0 +1,14 @@
+/* Cameras that pop in around a selected project */
+.cam {
+  width: 34px; height: 34px; border-radius: 50%; background: var(--purple);
+  border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .45); opacity: 0;
+  animation: cam-pop .5s ease-out forwards;
+}
+@keyframes cam-pop {
+  0% { opacity: 0; transform: scale(.2); }
+  70% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.cam-led { animation: cam-blink 1.2s infinite; }
+@keyframes cam-blink { 50% { opacity: .2; } }

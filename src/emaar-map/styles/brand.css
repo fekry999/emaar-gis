@@ -1,0 +1,17 @@
+/* Brand chip (top) */
+.brand {
+  position: absolute; z-index: 1000; top: 10px; left: 56px; display: flex; align-items: center; gap: 10px;
+  background: var(--purple); border: 1px solid var(--gold); border-radius: 12px;
+  padding: 8px 14px 8px 10px; box-shadow: 0 4px 14px rgba(0, 0, 0, .4);
+}
+.brand-mark {
+  width: 30px; height: 30px; flex: none; border: 2px solid var(--cream);
+  background: conic-gradient(from 200deg at 50% 100%, var(--gold) 0 40deg, var(--purple) 40deg 50deg,
+    var(--gold) 50deg 90deg, var(--purple) 90deg 100deg, var(--gold) 100deg 140deg, var(--purple) 140deg 360deg);
+}
+.brand-title { font-family: Georgia, serif; font-size: 16px; color: var(--cream); }
+.brand-sub { font-size: 12px; color: var(--gold); }
+
+@media (max-width: 700px) {
+  .brand-title { font-size: 14px; }
+}
